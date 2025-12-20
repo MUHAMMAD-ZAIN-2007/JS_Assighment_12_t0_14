@@ -1,16 +1,4 @@
-//Q1
-let ch = prompt("Enter a character:");
-let code = ch.charCodeAt(0);
 
-if (code >= 48 && code <= 57) {
-  alert("It is a Number");
-} else if (code >= 65 && code <= 90) {
-  alert("It is an Uppercase Letter");
-} else if (code >= 97 && code <= 122) {
-  alert("It is a Lowercase Letter");
-} else {
-  alert("Invalid Input");
-}
 
 //Q2
 
@@ -74,20 +62,3 @@ if (hour < 18) {
   greeting = "Good evening";
 }
 alert(greeting);
-
-
-//Q7
-
-let time = +prompt("Enter time in 24-hour format (e.g. 1900):");
-
-if (time >= 0 && time < 1200) {
-  alert("Good Morning");
-} else if (time >= 1200 && time < 1700) {
-  alert("Good Afternoon");
-} else if (time >= 1700 && time < 2100) {
-  alert("Good Evening");
-} else if (time >= 2100 && time <= 2359) {
-  alert("Good Night");
-} else {
-  alert("Invalid Time");
-}
