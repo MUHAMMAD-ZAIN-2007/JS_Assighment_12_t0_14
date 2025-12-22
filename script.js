@@ -62,3 +62,20 @@ if (hour < 18) {
   greeting = "Good evening";
 }
 alert(greeting);
+
+
+//Q7
+
+let time = +prompt("Enter time in 24-hour format");
+
+if (time >= 0 && time < 12) {
+  alert("Good Morning");
+} else if (time >= 12 && time < 17) {
+  alert("Good Afternoon");
+} else if (time >= 17 && time < 21) {
+  alert("Good Evening");
+} else if (time >= 21 && time <= 23) {
+  alert("Good Night");
+} else {
+  alert("Invalid Time");
+}
